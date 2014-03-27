@@ -345,8 +345,8 @@ module.exports = function(grunt) {
 		 * @return {String}
 		 */
 		function appendSlash(filepath) {
-			if (filepath.length && !_s.endsWith(filepath, path.sep)) {
-				filepath += path.sep;
+			if (filepath.length && !_s.endsWith(filepath, '/')) {
+				filepath += '/';
 			}
 			return filepath;
 		}
